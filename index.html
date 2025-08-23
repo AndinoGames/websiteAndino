@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andino Games</title>
+  <link rel="icon" href="images/logo2.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="navbar bg-body-tertiary fixed-top" style="background-color: rgba(0, 23, 1, 0.95) !important;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logofull.png" alt="Andino Games" height="40" />
+        </a>
+
+      <button class="navbar-toggler border-0 bg-transparent" 
+      type="button" data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasNavbar" 
+      aria-controls="offcanvasNavbar" 
+      aria-label="Toggle navigation">
+        <img src="images/flechaweb.png" alt="Menú" style="width: 32px; height: 32px;">
+    </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#quienes-somos">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#nuestros-proyectos">Nuestros Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#andino-lab">Andino Lab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+<section id="banner" class="d-flex align-items-center justify-content-center" style="
+  height: 100vh;
+  background-image: url(images/banner1screensize.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 56px;
+">
+  <div class="text-center text-light px-3">
+    <h1 style="color: rgb(189, 240, 29); font-weight: 900;">Bienvenidos a Andino Games</h1>
+    <p style="font-size: 1.2rem; color: rgb(239, 239, 235); max-width: 700px; margin: 0 auto;">
+      Donde la pasión por los videojuegos se fusiona con la innovación.
+    </p>
+    <a href="#servicios" class="btn btn-primary mt-4">Conoce nuestros servicios</a>
+  </div>
+</section>
+
+
+
+  <!-- Nosotros + Video -->
+  <section id="quienes-somos" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h2 style="color: rgb(189, 240, 29);">¿Quiénes somos?</h2>
+      <p style="color: rgb(239, 239, 235);">
+        Somos un estudio creativo y comunidad apasionada por los videojuegos,
+        nuestro equipo interdisciplinario trabaja en células especializadas 
+        para ofrecer soluciones de primer nivel. Apostamos por el crecimiento 
+        en comunidad y el talento joven, con un equipo compuesto mayoritariamente por estudiantes activos.
+        Creemos en el potencial de la gamificación para transformar cualquier industria. 
+        Por eso, desarrollamos experiencias interactivas y soluciones gamificadas adaptadas a diferentes sectores.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <video src="images/AndinoGamesSound.mp4" controls autoplay muted playsinline style="width: 100%; border-radius: 12px;"></video>
+    </div>
+  </div>
+</section>
+<!-- Fotos del Team -->
+  <div class="row mt-4 justify-content-center" id="galeria-quienes-somos">
+    <div class="col-6 col-md-3 mb-3">
+      <a href="images/b1.png" data-fancybox="gallery" data-caption="Festival de Animación COMFAMA en El Retiro">
+        <img src="images/b1.png" alt="Premiación Creame" class="img-fluid rounded shadow-sm" />
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-3">
+      <a href="images/b2.png" data-fancybox="gallery" data-caption="Festival de Animación COMFAMA en El Retiro">
+        <img src="images/b2.png" alt="Possumdus" class="img-fluid rounded shadow-sm" />
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-3">
+      <a href="images/b3.png" data-fancybox="gallery" data-caption="Foto del Team 11/2024">
+        <img src="images/b3.png" alt="Ferney's Journey" class="img-fluid rounded shadow-sm" />
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-3">
+      <a href="images/b4.png" data-fancybox="gallery" data-caption="Premiación Creame">
+        <img src="images/b4.png" alt="Alice in Doomland" class="img-fluid rounded shadow-sm" />
+      </a>
+    </div>
+  </div>
+</section>
+
+ <!-- Misión y Visión -->
+  <section id="mision-vision" class="container py-5 text-light">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h2 style="color: rgb(189, 240, 29);">Nuestra Misión</h2>
+        <p>
+          Crear videojuegos innovadores y soluciones digitales que fomenten la creatividad, el aprendizaje y la diversión, apoyando el talento joven y la comunidad local.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h2 style="color: rgb(189, 240, 29);">Nuestra Visión</h2>
+        <p>
+          Ser un referente regional en la industria de videojuegos y gamificación, reconocidos por nuestro compromiso con la innovación, la calidad y el impacto social positivo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Servicios -->
+<section id="servicios" class="section my-5">
+  <div class="container">
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Servicios</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/s1.png" class="card-img-top" alt="Servicio 1" />
+          <div class="card-body">
+            <h5 class="card-title" style="color: rgb(189, 240, 29);">Desarrollo de Videojuegos</h5>
+            <p class="card-text">Creación de juegos con arte y animación 2D personalizada.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/s2.png" class="card-img-top" alt="Servicio 2" />
+          <div class="card-body">
+            <h5 class="card-title" style="color: rgb(189, 240, 29);">Gamificación & Experiencias Interactivas</h5>
+            <p class="card-text">Modelado y animación 3D para juegos inmersivos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/s3.png" class="card-img-top" alt="Servicio 3" />
+          <div class="card-body">
+            <h5 class="card-title" style="color: rgb(189, 240, 29);">Consultoría</h5>
+            <p class="card-text">Asesoría en diseño de juegos y marketing digital.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/s4.png" class="card-img-top" alt="Servicio 4" />
+          <div class="card-body">
+            <h5 class="card-title" style="color: rgb(189, 240, 29);">Arte Digital 2D y 3D</h5>
+            <p class="card-text">Cursos y talleres especializados en desarrollo de videojuegos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Nuestros Proyectos -->
+  <section id="nuestros-proyectos" class="container py-5 text-light" style="background-color: #021801;">
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Nuestros Proyectos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/p1.png" class="card-img-top" alt="Proyecto 1" />
+          <div class="card-body">
+            <h5 class="card-title">Ferney's Journey</h5>
+            <p class="card-text">¡Acompaña a Ferney y ayúdalo a regresar a su casa!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/p2.png" class="card-img-top" alt="Proyecto 2" />
+          <div class="card-body">
+            <h5 class="card-title">Lumens Jump</h5>
+            <p class="card-text">Juego Mobile de plataformas, ¡Llega hasta la Cima!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Andino Lab -->
+  <section id="andino-lab" class="container py-5">
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Andino Lab</h2>
+    <p class="text-light text-center mx-auto" style="max-width: 700px;">
+      Andino Lab es nuestro espacio de innovación donde experimentamos con nuevas tecnologías, prototipos, 
+      mecánicas y metodologías para impulsar el desarrollo creativo y tecnológico de videojuegos y experiencias digitales.
+    </p>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/p3.png" class="card-img-top" alt="Proyecto 1" />
+          <div class="card-body">
+            <h5 class="card-title">Possumdus</h5>
+            <p class="card-text">La tierra esta apunto de perecer... ¡Y solo tu pequeña zarigueya puedes salvarla! 
+              ¿Te quedarás en el espacio en busca de una nueva oportunidad o regresaras a casa?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/p4.png" class="card-img-top" alt="Proyecto 2" />
+          <div class="card-body">
+            <h5 class="card-title">Necronauts</h5>
+            <p class="card-text">Una invasión se acerca y solo el profeta puede detener y defendernos de la invasión alienígena. Mucha suerte... Profeta.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/p5.png" class="card-img-top" alt="Proyecto 2" />
+          <div class="card-body">
+            <h5 class="card-title">Parque de la Conservación VR</h5>
+            <p class="card-text">Adéntrate por el Parque de la Conservación de Medellín mientras conoces y aprendes acerca de las especies que habitan en el parque.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contacto -->
+  <section id="contacto" class="container py-5 text-light" style="background-color: #021801;">
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+  <div class="por">Andino Games | All Rights Reserved ©</div>
+  <div class="redes-sociales d-flex justify-content-center gap-3 mt-2">
+    <a href="https://www.tiktok.com/@andino.games" target="_blank">
+      <img src="images/tiktok.png" alt="TikTok Icon" />
+    </a>
+    <a href="https://www.instagram.com/andino_games_studios/" target="_blank">
+      <img src="images/instagram.png" alt="Instagram Icon" />
+    </a>
+    <a href="https://www.linkedin.com/company/andino-games-studios/" target="_blank">
+      <img src="images/linkedin.png" alt="LinkedIn Icon" />
+    </a>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

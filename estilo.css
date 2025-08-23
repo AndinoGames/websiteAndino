@@ -1,0 +1,125 @@
+/* Fondo y texto global */
+body, html {
+  background-color: rgb(18, 18, 18); /* fondo general oscuro */
+  color: rgb(239, 239, 235); /* texto claro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Menu Config */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.95); /* fondo navbar */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(42, 91, 18, 0.3);
+}
+
+/* Dentro del Menu */
+nav a {
+  color: rgb(239, 239, 235);
+  margin: 0 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  color: rgb(189, 240, 29);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: rgb(6, 81, 249);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgb(189, 240, 29);
+  color: rgb(18, 18, 18);
+}
+
+/* Links generales */
+a {
+  color: rgb(6, 81, 249);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(112, 190, 20);
+}
+
+/* Secciones */
+.section {
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+/* Encabezados */
+h2, h3 {
+  color: rgb(189, 240, 29);
+  margin-bottom: 1rem;
+}
+
+/* Texto */
+p, li {
+  color: rgb(239, 239, 235);
+}
+
+/* Footer */
+footer {
+  background-color: rgb(18, 18, 18);
+  color: rgb(239, 239, 235);
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid rgb(189, 240, 29);
+}
+
+/* Fancybox fondo oscuro */
+.fancybox-bg {
+  background-color: rgba(18, 18, 18, 0.95) !important;
+}
+
+/* Fancybox título claro */
+.fancybox-caption {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Offcanvas */
+.offcanvas {
+  background-color: rgb(18, 18, 18) !important;
+  color: rgb(255, 255, 255);
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  gap: 20px; /* Espacio entre los iconos */
+  margin-top: 10px;
+}
+
+.redes-sociales a img {
+  width: 40px; /* Puedes ajustar el tamaño de los iconos */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.redes-sociales a img:hover {
+  transform: scale(1.1);
+}
