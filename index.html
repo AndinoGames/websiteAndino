@@ -4,7 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Andino Games</title>
-  <link rel="icon" href="images/logo2.png" type="image/x-icon" />
+
+  <!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+
+  <!-- Other Configs -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="estilo.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
@@ -28,7 +38,7 @@
 
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">menú</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
         <div class="offcanvas-body">
@@ -43,7 +53,10 @@
               <a class="nav-link text-light" href="#servicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#nuestros-proyectos">Nuestros Proyectos</a>
+              <a class="nav-link text-light" href="#nuestros-juegos">Nuestros Juegos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#trabajos-empresas">Trabajos con Empresas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#andino-lab">Andino Lab</a>
@@ -57,10 +70,10 @@
     </div>
   </nav>
 
-  <!-- Banner -->
-<section id="banner" class="d-flex align-items-center justify-content-center" style="
+<!-- Banner -->
+<section id="banner" class="d-flex align-items-center justify-content-center banner-overlay" style="
   height: 100vh;
-  background-image: url(images/banner1screensize.png);
+  background-image: url(images/team20252full.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -68,57 +81,131 @@
   padding-top: 56px;
 ">
   <div class="text-center text-light px-3">
-    <h1 style="color: rgb(189, 240, 29); font-weight: 900;">Bienvenidos a Andino Games</h1>
+    <!-- <h1 style="color: rgb(189, 240, 29); font-weight: 900;">andino games</h1>-->
+    <!--<h1> <a> <img src="images/logofull.png" alt="andino-games-studios"></a> </h1> -->
+    <img src="images/logofull.png" alt="Andino Games" style="max-width: 600px;">
     <p style="font-size: 1.2rem; color: rgb(239, 239, 235); max-width: 700px; margin: 0 auto;">
-      Donde la pasión por los videojuegos se fusiona con la innovación.
+      Juegos que sientes. Historias que transforman.
     </p>
-    <a href="#servicios" class="btn btn-primary mt-4">Conoce nuestros servicios</a>
+    <a href="#servicios" class="btn btn-primary mt-4">conoce nuestros servicios</a>
   </div>
 </section>
 
 
-
-  <!-- Nosotros + Video -->
-  <section id="quienes-somos" class="container py-5">
+<!-- Nosotros + Video -->
+<section id="quienes-somos" class="container py-5">
   <div class="row align-items-center">
     <div class="col-md-6 mb-4 mb-md-0">
-      <h2 style="color: rgb(189, 240, 29);">¿Quiénes somos?</h2>
+      <h2 style="color: rgb(189, 240, 29); font-weight: 900;">¿quiénes somos?</h2>
       <p style="color: rgb(239, 239, 235);">
-        Somos un estudio creativo y comunidad apasionada por los videojuegos,
-        nuestro equipo interdisciplinario trabaja en células especializadas 
-        para ofrecer soluciones de primer nivel. Apostamos por el crecimiento 
-        en comunidad y el talento joven, con un equipo compuesto mayoritariamente por estudiantes activos.
-        Creemos en el potencial de la gamificación para transformar cualquier industria. 
-        Por eso, desarrollamos experiencias interactivas y soluciones gamificadas adaptadas a diferentes sectores.
+        Somos un estudio creativo en donde creemos firmemente que los videojuegos son 
+        una poderosa herramienta para crear experiencias significativas y contar historias que resuenan.
+        Operamos en dos frentes clave: para nuestros aliados corporativos, desarrollamos soluciones innovadoras 
+        de Gamificación y Experiencias Interactivas que transforman sus objetivos en misiones inolvidables. 
+        Al mismo tiempo, desde nuestro laboratorio creativo, damos vida a videojuegos con alma, enfocados 
+        en explorar narrativas universales que merecen ser contadas.
       </p>
     </div>
     <div class="col-md-6">
-      <video src="images/AndinoGamesSound.mp4" controls autoplay muted playsinline style="width: 100%; border-radius: 12px;"></video>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+        <iframe 
+          src="https://www.youtube.com/embed/sZvLF_D4iLg?si=F0ughMOKgmarLzHY?autoplay=1&mute=1&playsinline=1&rel=0&vq=hd1080" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen 
+          style="position: absolute; top:0; left:0; width:100%; height:100%; border-radius: 12px;">
+        </iframe>
+      </div>
     </div>
   </div>
 </section>
-<!-- Fotos del Team -->
+
+
+
+<!-- Galeria -->
+<!-- Los banners son de 800x600 -->
   <div class="row mt-4 justify-content-center" id="galeria-quienes-somos">
     <div class="col-6 col-md-3 mb-3">
-      <a href="images/b1.png" data-fancybox="gallery" data-caption="Festival de Animación COMFAMA en El Retiro">
-        <img src="images/b1.png" alt="Premiación Creame" class="img-fluid rounded shadow-sm" />
+      <a href="images/lanzamiento5.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Zona de Juegos">
+        <img src="images/lanzamiento5b.png" alt="Lanzamiento de Marca" class="img-fluid rounded shadow-sm" />
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
       <a href="images/b2.png" data-fancybox="gallery" data-caption="Festival de Animación COMFAMA en El Retiro">
-        <img src="images/b2.png" alt="Possumdus" class="img-fluid rounded shadow-sm" />
+        <img src="images/b2.png" alt="Festival de Animación Comfama" class="img-fluid rounded shadow-sm" />
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
-      <a href="images/b3.png" data-fancybox="gallery" data-caption="Foto del Team 11/2024">
-        <img src="images/b3.png" alt="Ferney's Journey" class="img-fluid rounded shadow-sm" />
+      <a href="images/Background.png" data-fancybox="gallery" data-caption="Festival de Animación COMFAMA en El Retiro">
+        <img src="images/bannerTeamRetiro.png" alt="Festival de Animación COMFAMA en El Retiro" class="img-fluid rounded shadow-sm" />
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
       <a href="images/b4.png" data-fancybox="gallery" data-caption="Premiación Creame">
-        <img src="images/b4.png" alt="Alice in Doomland" class="img-fluid rounded shadow-sm" />
+        <img src="images/b4.png" alt="Premiación Creame" class="img-fluid rounded shadow-sm" />
       </a>
     </div>
+  <!-- Imágenes que NO se muestran como miniatura, pero aparecen en el lightbox -->
+    <a href="images/lanzamiento1.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Presentación Andino Labs" class="d-none">
+      <img src="images/lanzamiento1.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento2.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Zona de Juegos" class="d-none">
+      <img src="images/lanzamiento2.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento3.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Zona de Juegos | Experiencia VR" class="d-none">
+      <img src="images/lanzamiento3.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento4.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Mural: Deja tu huella" class="d-none">
+      <img src="images/lanzamiento4.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/b1.png" data-fancybox="gallery" data-caption="Festival de Animación COMFAMA en El Retiro" class="d-none">
+      <img src="images/b1.png" alt="Festival de Animación COMFAMA en El Retiro" />
+    </a>
+
+    <a href="images/lanzamiento6.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Zona de Juegos" class="d-none">
+      <img src="images/lanzamiento6.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento7.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Zona de Juegos" class="d-none">
+      <img src="images/lanzamiento7.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento8.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Zona de Juegos" class="d-none">
+      <img src="images/lanzamiento8.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento9.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Zona de Juegos" class="d-none">
+      <img src="images/lanzamiento9.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento10.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Charla: El viaje de Ferney, creer en lo imposible." class="d-none">
+      <img src="images/lanzamiento10.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento11.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Charla: El viaje de Ferney, creer en lo imposible." class="d-none">
+      <img src="images/lanzamiento11.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/lanzamiento12.jpg" data-fancybox="gallery" data-caption="Lanzamiento de Marca | Charla: El viaje de Ferney, creer en lo imposible." class="d-none">
+      <img src="images/lanzamiento12.jpg" alt="Lanzamiento de Marca" />
+    </a>
+
+    <a href="images/team20251.jpg" data-fancybox="gallery" data-caption="Una vista al Andino Team 2025" class="d-none">
+      <img src="images/team20251.jpg" alt="Una vista al Andino Team 2025" />
+    </a>
+
+    <a href="images/b3.png" data-fancybox="gallery" data-caption="Foto del Team 11/2024" class="d-none">
+      <img src="images/b3.png" alt="Foto del Team 11/2024" />
+    </a>
+
+    <a href="images/team20253.jpg" data-fancybox="gallery" data-caption="Una vista al Andino Team 2025" class="d-none">
+      <img src="images/team20253.jpg" alt="Una vista al Andino Team 2025" />
+    </a>
+
   </div>
 </section>
 
@@ -126,15 +213,19 @@
   <section id="mision-vision" class="container py-5 text-light">
     <div class="row">
       <div class="col-md-6 mb-4">
-        <h2 style="color: rgb(189, 240, 29);">Nuestra Misión</h2>
+        <h2 style="color: rgb(189, 240, 29); font-weight: 900;">nuestra misión</h2>
         <p>
-          Crear videojuegos innovadores y soluciones digitales que fomenten la creatividad, el aprendizaje y la diversión, apoyando el talento joven y la comunidad local.
+          Desarrollamos videojuegos, experiencias gamificadas y arte digital, 
+          promoviendo la colaboración creativa, la diversidad de perspectivas y la innovación, 
+          para generar identidad cultural, impacto social y crecimiento de la industria creativa.
         </p>
       </div>
       <div class="col-md-6">
-        <h2 style="color: rgb(189, 240, 29);">Nuestra Visión</h2>
+        <h2 style="color: rgb(189, 240, 29); font-weight: 900;">nuestra visión</h2>
         <p>
-          Ser un referente regional en la industria de videojuegos y gamificación, reconocidos por nuestro compromiso con la innovación, la calidad y el impacto social positivo.
+          Ser en el 2030, líderes de una industria digital en la que los videojuegos, 
+          las experiencias gamificadas y el arte interactivo de Latinoamérica sean reconocidos 
+          globalmente por su valor cultural, diversidad y creatividad transformadora.
         </p>
       </div>
     </div>
@@ -143,13 +234,13 @@
  <!-- Servicios -->
 <section id="servicios" class="section my-5">
   <div class="container">
-    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Servicios</h2>
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29); font-weight: 900;">servicios</h2>
     <div class="row g-4">
       <div class="col-md-6 col-lg-3">
         <div class="card bg-dark text-light h-100">
           <img src="images/s1.png" class="card-img-top" alt="Servicio 1" />
           <div class="card-body">
-            <h5 class="card-title" style="color: rgb(189, 240, 29);">Desarrollo de Videojuegos</h5>
+            <h5 class="card-title" style="color: rgb(189, 240, 29); font-weight: 900;">desarrollo de videojuegos</h5>
             <p class="card-text">Creación de juegos con arte y animación 2D personalizada.</p>
           </div>
         </div>
@@ -158,7 +249,7 @@
         <div class="card bg-dark text-light h-100">
           <img src="images/s2.png" class="card-img-top" alt="Servicio 2" />
           <div class="card-body">
-            <h5 class="card-title" style="color: rgb(189, 240, 29);">Gamificación & Experiencias Interactivas</h5>
+            <h5 class="card-title" style="color: rgb(189, 240, 29); font-weight: 900;">gamificación & experiencias interactivas</h5>
             <p class="card-text">Modelado y animación 3D para juegos inmersivos.</p>
           </div>
         </div>
@@ -167,7 +258,7 @@
         <div class="card bg-dark text-light h-100">
           <img src="images/s3.png" class="card-img-top" alt="Servicio 3" />
           <div class="card-body">
-            <h5 class="card-title" style="color: rgb(189, 240, 29);">Consultoría</h5>
+            <h5 class="card-title" style="color: rgb(189, 240, 29); font-weight: 900;">consultoría</h5>
             <p class="card-text">Asesoría en diseño de juegos y marketing digital.</p>
           </div>
         </div>
@@ -176,7 +267,7 @@
         <div class="card bg-dark text-light h-100">
           <img src="images/s4.png" class="card-img-top" alt="Servicio 4" />
           <div class="card-body">
-            <h5 class="card-title" style="color: rgb(189, 240, 29);">Arte Digital 2D y 3D</h5>
+            <h5 class="card-title" style="color: rgb(189, 240, 29); font-weight: 900;">arte digital 2D y 3D</h5>
             <p class="card-text">Cursos y talleres especializados en desarrollo de videojuegos.</p>
           </div>
         </div>
@@ -188,15 +279,15 @@
 
 
 
-  <!-- Nuestros Proyectos -->
+  <!-- Nuestros Juegos -->
   <section id="nuestros-proyectos" class="container py-5 text-light" style="background-color: #021801;">
-    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Nuestros Proyectos</h2>
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29); font-weight: 900;">nuestros juegos</h2>
     <div class="row justify-content-center">
       <div class="col-md-4 mb-4">
         <div class="card bg-dark text-light h-100">
           <img src="images/p1.png" class="card-img-top" alt="Proyecto 1" />
           <div class="card-body">
-            <h5 class="card-title">Ferney's Journey</h5>
+            <h5 class="card-title" style="font-weight: 900;">ferney's journey</h5>
             <p class="card-text">¡Acompaña a Ferney y ayúdalo a regresar a su casa!</p>
           </div>
         </div>
@@ -205,8 +296,33 @@
         <div class="card bg-dark text-light h-100">
           <img src="images/p2.png" class="card-img-top" alt="Proyecto 2" />
           <div class="card-body">
-            <h5 class="card-title">Lumens Jump</h5>
+            <h5 class="card-title" style="font-weight: 900;">lumens jump</h5>
             <p class="card-text">Juego Mobile de plataformas, ¡Llega hasta la Cima!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trabajo con empresas -->
+  <section id="trabajos-empresas" class="container py-5 text-light" style="background-color: #021801;">
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29); font-weight: 900;">trabajos con empresas</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/p1.png" class="card-img-top" alt="Proyecto 1" />
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: 900;">ruralmente</h5>
+            <p class="card-text">lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100">
+          <img src="images/p2.png" class="card-img-top" alt="Proyecto 2" />
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: 900;">parque de la conservación VR</h5>
+            <p class="card-text">Adéntrate por el Parque de la Conservación de Medellín mientras conoces y aprendes acerca de las especies que habitan en el parque.</p>
           </div>
         </div>
       </div>
@@ -215,7 +331,7 @@
 
   <!-- Andino Lab -->
   <section id="andino-lab" class="container py-5">
-    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Andino Lab</h2>
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29); font-weight: 900;">andino lab</h2>
     <p class="text-light text-center mx-auto" style="max-width: 700px;">
       Andino Lab es nuestro espacio de innovación donde experimentamos con nuevas tecnologías, prototipos, 
       mecánicas y metodologías para impulsar el desarrollo creativo y tecnológico de videojuegos y experiencias digitales.
@@ -225,7 +341,7 @@
         <div class="card bg-dark text-light h-100">
           <img src="images/p3.png" class="card-img-top" alt="Proyecto 1" />
           <div class="card-body">
-            <h5 class="card-title">Possumdus</h5>
+            <h5 class="card-title" style="font-weight: 900;">possumdus</h5>
             <p class="card-text">La tierra esta apunto de perecer... ¡Y solo tu pequeña zarigueya puedes salvarla! 
               ¿Te quedarás en el espacio en busca de una nueva oportunidad o regresaras a casa?</p>
           </div>
@@ -235,7 +351,7 @@
         <div class="card bg-dark text-light h-100">
           <img src="images/p4.png" class="card-img-top" alt="Proyecto 2" />
           <div class="card-body">
-            <h5 class="card-title">Necronauts</h5>
+            <h5 class="card-title" style="font-weight: 900;">necronauts</h5>
             <p class="card-text">Una invasión se acerca y solo el profeta puede detener y defendernos de la invasión alienígena. Mucha suerte... Profeta.</p>
           </div>
         </div>
@@ -244,8 +360,8 @@
         <div class="card bg-dark text-light h-100">
           <img src="images/p5.png" class="card-img-top" alt="Proyecto 2" />
           <div class="card-body">
-            <h5 class="card-title">Parque de la Conservación VR</h5>
-            <p class="card-text">Adéntrate por el Parque de la Conservación de Medellín mientras conoces y aprendes acerca de las especies que habitan en el parque.</p>
+            <h5 class="card-title" style="font-weight: 900;">sol</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
       </div>
@@ -255,7 +371,7 @@
 
   <!-- Contacto -->
   <section id="contacto" class="container py-5 text-light" style="background-color: #021801;">
-    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29);">Contacto</h2>
+    <h2 class="text-center mb-4" style="color: rgb(189, 240, 29); font-weight: 900;">contacto</h2>
     <div class="row justify-content-center">
       <div class="col-md-6">
         <form>

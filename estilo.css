@@ -1,8 +1,34 @@
+/* Font */
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("fonts/Satoshi-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("fonts/Satoshi-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Fondo y texto global */
 body, html {
   background-color: rgb(18, 18, 18); /* fondo general oscuro */
   color: rgb(239, 239, 235); /* texto claro */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Satoshi";
   margin: 0;
   padding: 0;
   height: 100%;
@@ -21,6 +47,29 @@ nav {
   align-items: center;
   z-index: 999;
   box-shadow: 0 2px 5px rgba(42, 91, 18, 0.3);
+}
+
+/* Oscurecer fondo del banner */
+#banner.banner-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-banner {
+  max-width: 250px; /* o el tamaño que quieras */
+  width: 100%;
+  height: auto;
+}
+
+#banner.banner-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* Ajusta opacidad: 0.3 más claro, 0.7 más oscuro */
+  z-index: -1;
 }
 
 /* Dentro del Menu */
