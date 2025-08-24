@@ -149,6 +149,47 @@ footer {
   color: rgb(255, 255, 255) !important;
 }
 
+/* Quitar subrayado y colores raros de los links en "nuestros juegos" */
+#nuestros-juegos .card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Quitar subrayado y colores raros del link */
+#nuestros-juegos .card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Evitar color morado al visitar */
+#nuestros-juegos .card-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Estilo base de las cards */
+#nuestros-juegos .game-card {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease, 
+              filter 0.3s ease, 
+              border-color 0.3s ease;
+  overflow: hidden; /* evita que el scale se corte */
+}
+
+/* Hover sobre el link (para asegurar que funcione en móviles y PC) */
+#nuestros-juegos .card-link:hover .game-card {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  filter: brightness(1.1);
+  border-color: rgb(189, 240, 29); /* verde */
+}
+
+
+
 /* Offcanvas */
 .offcanvas {
   background-color: rgb(18, 18, 18) !important;
